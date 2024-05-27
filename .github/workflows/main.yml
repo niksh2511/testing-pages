@@ -28,7 +28,7 @@ jobs:
       run: npm install
 
     - name: Start backend
-      working-directory: ./backend
+      working-directory: ./Backend_Loan_Emi_Calculator
       run: |
         npm install -g nodemon
         nohup nodemon server.js &
