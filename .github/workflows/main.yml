@@ -62,10 +62,10 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: production-files
-        path: ./dist
+        path: ./frontend_loan_calendar/build
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.TASK_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./frontend_loan_calendar/build
